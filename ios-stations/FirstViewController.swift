@@ -11,6 +11,8 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(named: "Main")
+        let localStr = NSLocalizedString("ios-stations", comment: "")
+        print(localStr)
     }
 }
 

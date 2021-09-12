@@ -21,7 +21,7 @@
 		BE7131462688C07700E3EAB8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7131452688C07600E3EAB8 /* WebKit.framework */; };
 		BE713148268B3CF000E3EAB8 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE713147268B3CF000E3EAB8 /* UIColor+Theme.swift */; };
 		BE71314A268B4CA400E3EAB8 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE713149268B4CA400E3EAB8 /* BookCell.swift */; };
-		CF0D45A126EE512300B2A7E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF0D45A326EE512300B2A7E8 /* InfoPlist.strings */; };
+		CF0D45C226EE922E00B2A7E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF0D45C426EE922E00B2A7E8 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +64,7 @@
 		BE713149268B4CA400E3EAB8 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		CF0D458926EE3F6600B2A7E8 /* ja-JP */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ja-JP"; path = "ja-JP.lproj/Main.strings"; sourceTree = "<group>"; };
 		CF0D458A26EE3F6600B2A7E8 /* ja-JP */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ja-JP"; path = "ja-JP.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		CF0D45A226EE512300B2A7E8 /* ja-JP */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ja-JP"; path = "ja-JP.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		CF0D45A726EE51F000B2A7E8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF0D45C326EE922E00B2A7E8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +96,7 @@
 		BE245134266FBEE00038AD81 = {
 			isa = PBXGroup;
 			children = (
-				CF0D45A326EE512300B2A7E8 /* InfoPlist.strings */,
+				CF0D45C426EE922E00B2A7E8 /* InfoPlist.strings */,
 				BE24513F266FBEE00038AD81 /* ios-stations */,
 				BE245156266FBEE10038AD81 /* ios-stationsTests */,
 				BE245161266FBEE10038AD81 /* ios-stationsUITests */,
@@ -267,7 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE24514D266FBEE10038AD81 /* LaunchScreen.storyboard in Resources */,
-				CF0D45A126EE512300B2A7E8 /* InfoPlist.strings in Resources */,
+				CF0D45C226EE922E00B2A7E8 /* InfoPlist.strings in Resources */,
 				BE24514A266FBEE10038AD81 /* Assets.xcassets in Resources */,
 				BE245148266FBEE00038AD81 /* Main.storyboard in Resources */,
 			);
@@ -363,13 +362,13 @@
 			name = Info.plist;
 			sourceTree = "<group>";
 		};
-		CF0D45A326EE512300B2A7E8 /* InfoPlist.strings */ = {
+		CF0D45C426EE922E00B2A7E8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CF0D45A226EE512300B2A7E8 /* ja-JP */,
-				CF0D45A726EE51F000B2A7E8 /* ja */,
+				CF0D45C326EE922E00B2A7E8 /* ja */,
 			);
 			name = InfoPlist.strings;
+			path = "ios-stations";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

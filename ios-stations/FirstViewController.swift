@@ -6,13 +6,13 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    @IBOutlet weak var label: UILabel!
+    
     var books: [Book]?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(named: "Main")
-        let localStr = NSLocalizedString("ios-stations", comment: "")
-        print(localStr)
+//        self.view.backgroundColor = UIColor(named: "Main")
     }
 }
 

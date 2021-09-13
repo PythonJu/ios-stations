@@ -17,29 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL3-04-onf">
-                                <rect key="frame" x="20" y="441" width="388" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcA-mc-ATT">
+                                <rect key="frame" x="114" y="441" width="200" height="44"/>
                                 <color key="backgroundColor" name="Main"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="YaI-LU-VqW"/>
+                                    <constraint firstAttribute="width" constant="200" id="Pmf-CM-KQl"/>
+                                    <constraint firstAttribute="height" constant="44" id="eEs-BO-gTI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSk-il-Pxz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jL3-04-onf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2z1-rF-jXe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jL3-04-onf" secondAttribute="trailing" constant="20" id="ZDx-xa-sSf"/>
-                            <constraint firstItem="jL3-04-onf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hYr-rS-fH2"/>
-                            <constraint firstItem="jL3-04-onf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tVV-fK-OcY"/>
+                            <constraint firstItem="NcA-mc-ATT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HFF-O2-SCD"/>
+                            <constraint firstItem="NcA-mc-ATT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vEj-Vu-II6"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="label" destination="jL3-04-onf" id="dD7-eq-VFb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

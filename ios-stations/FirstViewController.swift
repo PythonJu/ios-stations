@@ -7,7 +7,9 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    @IBOutlet weak var label: UILabel!
+    @IBAction func click(_ sender: Any) {
+    }
+    
     
     var books: [Book]?
     override func viewDidLoad() {

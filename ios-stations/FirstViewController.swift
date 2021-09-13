@@ -12,7 +12,7 @@ class FirstViewController: UIViewController {
     var books: [Book]?
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = UIColor(named: "Main")
+        self.view.backgroundColor = UIColor(named: "Main")
     }
 }
 

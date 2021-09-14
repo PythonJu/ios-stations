@@ -7,14 +7,17 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    @IBAction func click(_ sender: Any) {
+    @IBAction func clickButton(_ sender: Any) {
+        clickButton.backgroundColor = UIColor.randomColor
     }
+    
+    @IBOutlet weak var clickButton: UIButton!
     
     
     var books: [Book]?
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = UIColor(named: "Main")
+//        clickButton.backgroundColor = UIColor.randomColor
     }
 }
 

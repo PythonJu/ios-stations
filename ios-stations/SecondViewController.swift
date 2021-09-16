@@ -9,10 +9,11 @@ import WebKit
 class SecondViewController: UIViewController {
 
     private var webView: WKWebView!
-    private var url: String!
+//    private消した↓
+    var receiveDataUrl: String!
     
     init(url: String) {
-        self.url = url
+        self.receiveDataUrl = url
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -26,7 +27,7 @@ class SecondViewController: UIViewController {
         webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
         view = webView
         
-//        load(withURL: url)
+        load(withURL: receiveDataUrl)
     }
     
     private func load(withURL urlString: String) {

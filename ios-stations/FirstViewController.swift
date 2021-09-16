@@ -11,8 +11,9 @@ class FirstViewController: UIViewController {
     
     @IBAction func presentSecondViewController(_ sender: Any) {
 //        clickButton.backgroundColor = UIColor.randomColor
-        let moveToSecondVC = storyboard?.instantiateViewController(identifier: "SecondView")
-        self.present(moveToSecondVC!, animated: true, completion: nil)
+        let moveToSecondVC = storyboard?.instantiateViewController(identifier: "SecondView") as! SecondViewController
+        moveToSecondVC.receiveDataUrl = "https://techbowl.co.jp/"
+        self.present(moveToSecondVC, animated: true, completion: nil)
     }
     
     var books: [Book]?

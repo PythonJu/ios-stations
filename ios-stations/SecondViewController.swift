@@ -26,7 +26,7 @@ class SecondViewController: UIViewController {
         webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
         view = webView
         
-        load(withURL: url)
+//        load(withURL: url)
     }
     
     private func load(withURL urlString: String) {

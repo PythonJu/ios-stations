@@ -7,17 +7,17 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    @IBAction func clickButton(_ sender: Any) {
-        clickButton.backgroundColor = UIColor.randomColor
-    }
-    
     @IBOutlet weak var clickButton: UIButton!
     
+    @IBAction func presentSecondViewController(_ sender: Any) {
+//        clickButton.backgroundColor = UIColor.randomColor
+        let moveToSecondVC = storyboard?.instantiateViewController(identifier: "SecondView")
+        self.present(moveToSecondVC!, animated: true, completion: nil)
+    }
     
     var books: [Book]?
     override func viewDidLoad() {
         super.viewDidLoad()
-//        clickButton.backgroundColor = UIColor.randomColor
     }
 }
 

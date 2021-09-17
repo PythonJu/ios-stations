@@ -10,10 +10,16 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var clickButton: UIButton!
     
     @IBAction func presentSecondViewController(_ sender: Any) {
-//        clickButton.backgroundColor = UIColor.randomColor
         let moveToSecondVC = storyboard?.instantiateViewController(identifier: "SecondView") as! SecondViewController
-        moveToSecondVC.receiveDataUrl = "https://techbowl.co.jp/"
-        self.present(moveToSecondVC, animated: true, completion: nil)
+        moveToSecondVC.receiveDataUrl = "https://yahoo.co.jp/"
+        let clickAlert = UIAlertController(title: nil,
+                                           message: "\(moveToSecondVC.receiveDataUrl!)へ遷移しますがよろしいですか？",
+                                           preferredStyle: .alert)
+        clickAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            self.present(moveToSecondVC, animated: true, completion: nil)
+        }))
+        clickAlert.addAction(UIAlertAction(title: "cancel", style: .cancel))
+        self.present(clickAlert, animated: true)
     }
     
     var books: [Book]?
